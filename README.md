@@ -1,5 +1,5 @@
-Evaluation of javascript timeline / GANTT components
-====================================================
+Evaluation of js timeline / GANTT components
+============================================
 
 # The short story
 I recommend that we use CHAP Links Library until we find a reason to use something heavier weight. Read more about it at http://almende.github.io/chap-links-library/timeline.html  
