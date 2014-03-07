@@ -13,15 +13,15 @@ I recommend that we use CHAP Links Library until we find a reason to use somethi
 
 IF, and only if, we find ourselves having to write too much custom code to make a timeline look and behave like a full-featured GANTT chart (linking of tasks and heavy event editing expected from within the GANTT view itself), then we should consider using the GANT chart from the Teamwork project (http://gantt.twproject.com/). 
 
-# Some online reviews of timelines and gantt charts
+# Online reviews of components
 
 * http://okfnlabs.org/blog/2012/12/04/javascript-timeline-libaries-a-review.html
 * http://blog.jamesbayley.com/2013/02/01/a-review-of-javascript-drawing-libraries-for-flowcharts-gantt-charts-and-timelines/
 * http://roberto.open-lab.com/2012/06/14/the-javascript-gantt-odyssey/
 
-# Some Timeline/GANTT js tools and frameworks
+# Notes about components
 
-## Ones that looked promising and that I spent a little more time evaluating
+## Promising
 
 ### http://almende.github.io/chap-links-library/timeline.html and https://github.com/almende/chap-links-library
 Already in use at our company - just enough functionality - needs some better styling.
@@ -58,10 +58,11 @@ TypeError: $.browser is undefined
 Full featured GANTT chart - maybe too much so - this one might have been a good fit had the GANTT chart been the centerpiece of the app's view - vice the calendar - source very recently updated in github. Open source author created the component for use in his company's commercial product - http://www.twproject.com/home.page so I would expect the open source project to get love as the commercial product is enhanced with new features. 5 contributors to the project, but lion's share of work is from one author - robicch.
 IF we need more capability than what CHAP Links seems to offer us, this may be a good candidate for a full-featured GANTT chart.  Like the jQuery Gantt from mbielanczuk, this relies on an older version of jQuery with no support for $.browser (so would take a little bit of "doing" to get this framework to live with our current application.)
 
-### http://www.simile-widgets.org/timeline/ and https://code.google.com/p/simile-widgets/source/browse/ (one that we thought we would use - timeline source not touched since 2009 - many issues opened in the issue tracker - https://code.google.com/p/simile-widgets/issues/list?can=2&q=&colspec=ID%20Project%20Type%20Status%20Priority%20Fixed%20Owner%20Summary%20Opened%20Closed&sort=-opened&num=100&start=0 - that never seem to be getting closed)
+### http://www.simile-widgets.org/timeline/ and https://code.google.com/p/simile-widgets/source/browse/ 
+(one that we thought we would use - timeline source not touched since 2009 - many issues opened in the issue tracker - https://code.google.com/p/simile-widgets/issues/list?can=2&q=&colspec=ID%20Project%20Type%20Status%20Priority%20Fixed%20Owner%20Summary%20Opened%20Closed&sort=-opened&num=100&start=0 - that never seem to be getting closed)
 
 
-## Ones that I looked at but didn't fully evaluate
+## Not as promising
 
 ### http://stoicloofah.github.io/chronoline.js/
 One contributor - StoicLoofah :-)
@@ -71,7 +72,8 @@ Did not seem to have an event model (edit/delete events from timeline) - there w
 ### http://dhtmlx.com/docs/products/dhtmlxGantt/ 
 This one has a really clean look and seems to have full-featured GANTT capability. It just seemed somewhat monolithic and more of a framework than a component that could be easily dropped in an integrated.
 
-### https://github.com/thegrubbsian/jquery.ganttView (simple GANTT chart - was the basis for the one from mbielanczuk)
+### https://github.com/thegrubbsian/jquery.ganttView 
+Simple GANTT chart - was the basis for the one from mbielanczuk.
 
 ### http://timeglider.com/widget/ 
 Looks great but is NOT open source, could maybe justify the govt's use for "non-commercial" license but determining the correct license status and gaining official approval to use would probably just take too long.
@@ -82,4 +84,5 @@ Looks good for telling a story but not as convincing for deconflicting events of
 ### http://propublica.github.com/timeline-setter/ 
 Requires a build step using ruby to generate html/js resources from a csv file - basically sounded like weird additional step.
 
-### https://github.com/wellcomelibrary/timeline (this one looked like it might have promise but the example usage here ... http://wellcomelibrary.org/using-the-library/subject-guides/genetics/makers-of-modern-genetics/genetics-timeline/ ... also made it look like it would be a better fit for telling a story over time than deconflicting events.
+### https://github.com/wellcomelibrary/timeline 
+This one looked like it might have promise but the example usage here ... http://wellcomelibrary.org/using-the-library/subject-guides/genetics/makers-of-modern-genetics/genetics-timeline/ ... also made it look like it would be a better fit for telling a story over time than deconflicting events.
