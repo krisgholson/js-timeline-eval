@@ -11,7 +11,7 @@ I recommend that we use CHAP Links Library until we find a reason to use somethi
 * Decent documentation and API
 * Minimal footprint - 218 KB js file (79 KB minified) + 4 KB css
 
-IF, and only if, we find ourselves having to write too much custom code to make a timeline look and behave like a full-featured GANTT chart (linking of tasks and heavy event editing expected from within the GANTT view itself). 
+IF, and only if, we find ourselves having to write too much custom code to make a timeline look and behave like a full-featured GANTT chart (linking of tasks and heavy event editing expected from within the GANTT view itself), then we should consider using the GANT chart from the Teamwork project (http://gantt.twproject.com/). 
 
 # Some online reviews of timelines and gantt charts
 
