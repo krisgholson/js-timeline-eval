@@ -76,7 +76,7 @@ This one has a really clean look and seems to have full-featured GANTT capabilit
 Simple GANTT chart - was the basis for the one from mbielanczuk.
 
 ### http://timeglider.com/widget/ 
-Looks great but is NOT open source, could maybe justify the govt's use for "non-commercial" license but determining the correct license status and gaining official approval to use would probably just take too long.
+Looks great but is NOT open source, could maybe justify use as "non-commercial" license but determining the correct license status and gaining official approval to use would probably just take too long.
 
 ### http://timeline.knightlab.com/ or http://timeline.verite.co/ 
 Looks good for telling a story but not as convincing for deconflicting events of various types or assigned to various resources.
