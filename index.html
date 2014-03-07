@@ -1,44 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Js-timeline-eval by krisgholson</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=640" />
 
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Js-timeline-eval by krisgholson</title>
   </head>
+
   <body>
+    <a id="forkme_banner" href="https://github.com/krisgholson/js-timeline-eval">View on GitHub</a>
+    <div class="shell">
 
       <header>
-        <h1>Js-timeline-eval</h1>
-        <p>Evaluate various javascript packages for showing event data on a timeline or GANTT-like view.</p>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Js-timeline-eval</h1>
+            <h2>Evaluate various javascript packages for showing event data on a timeline or GANTT-like view.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
       </header>
 
-      <div id="banner">
-        <span id="logo"></span>
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/krisgholson/js-timeline-eval/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/krisgholson/js-timeline-eval/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
 
-        <a href="https://github.com/krisgholson/js-timeline-eval" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/krisgholson/js-timeline-eval/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/krisgholson/js-timeline-eval/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
         <h1>
 <a name="js-timeline--gantt-evaluations" class="anchor" href="#js-timeline--gantt-evaluations"><span class="octicon octicon-link"></span></a>js timeline / GANTT Evaluations</h1>
 
@@ -80,6 +87,8 @@ Source code updated just days ago.
 Also, Github issue list is active with contributors (primarily josdejong) responding to and fixing issues.
 Good documentation and API is easy to work with.</p>
 
+<p><a href="chap.html">Eval Page</a></p>
+
 <h3>
 <a name="httpvisjsorg-and-httpsgithubcomalmendevis" class="anchor" href="#httpvisjsorg-and-httpsgithubcomalmendevis"><span class="octicon octicon-link"></span></a><a href="http://visjs.org/">http://visjs.org/</a> and <a href="https://github.com/almende/vis/">https://github.com/almende/vis/</a>
 </h3>
@@ -91,6 +100,8 @@ Good documentation and API is easy to work with.
 Jos recommends using this OVER the CHAP Links timeline.
 Wanted to use this but found the documentation and example behind where the chap-links-library was.
 Also, found some jumpiness/querkiness when refreshing timelines containing even small amounts of data (that did not exist when using CHAP Links).</p>
+
+<p><a href="vis.html">Eval Page</a></p>
 
 <h3>
 <a name="httptaitemsgithubcomjquerygantt-and-httpsgithubcommbielanczukjquerygantt" class="anchor" href="#httptaitemsgithubcomjquerygantt-and-httpsgithubcommbielanczukjquerygantt"><span class="octicon octicon-link"></span></a><a href="http://taitems.github.com/jQuery.Gantt/">http://taitems.github.com/jQuery.Gantt/</a> and <a href="https://github.com/mbielanczuk/jQuery.Gantt">https://github.com/mbielanczuk/jQuery.Gantt</a>
@@ -108,12 +119,16 @@ The gantt scheme is afterwards empty.
 <p>Uses an older version of jQuery than we do. Received the following error do to the component's reliance on stuff that is no longer in jQuery ..
 TypeError: $.browser is undefined</p>
 
+<p><a href="ganttSimple.html">Eval Page</a></p>
+
 <h3>
 <a name="httpgantttwprojectcom-and-httpsgithubcomrobicchjquerygantt" class="anchor" href="#httpgantttwprojectcom-and-httpsgithubcomrobicchjquerygantt"><span class="octicon octicon-link"></span></a><a href="http://gantt.twproject.com/">http://gantt.twproject.com/</a> and <a href="https://github.com/robicch/jQueryGantt">https://github.com/robicch/jQueryGantt</a>
 </h3>
 
 <p>Full featured GANTT chart - maybe too much so - this one might have been a good fit had the GANTT chart been the centerpiece of the app's view - vice the calendar - source very recently updated in github. Open source author created the component for use in his company's commercial product - <a href="http://www.twproject.com/home.page">http://www.twproject.com/home.page</a> so I would expect the open source project to get love as the commercial product is enhanced with new features. 5 contributors to the project, but lion's share of work is from one author - robicch.
 IF we need more capability than what CHAP Links seems to offer us, this may be a good candidate for a full-featured GANTT chart.  Like the jQuery Gantt from mbielanczuk, this relies on an older version of jQuery with no support for $.browser (so would take a little bit of "doing" to get this framework to live with our current application.)</p>
+
+<p><a href="ganttComplex.html">Eval Page</a></p>
 
 <h3>
 <a name="httpwwwsimile-widgetsorgtimeline-and-httpscodegooglecompsimile-widgetssourcebrowse" class="anchor" href="#httpwwwsimile-widgetsorgtimeline-and-httpscodegooglecompsimile-widgetssourcebrowse"><span class="octicon octicon-link"></span></a><a href="http://www.simile-widgets.org/timeline/">http://www.simile-widgets.org/timeline/</a> and <a href="https://code.google.com/p/simile-widgets/source/browse/">https://code.google.com/p/simile-widgets/source/browse/</a>
@@ -168,12 +183,21 @@ Did not seem to have an event model (edit/delete events from timeline) - there w
 
 <p>This one looked like it might have promise but the example usage here ... <a href="http://wellcomelibrary.org/using-the-library/subject-guides/genetics/makers-of-modern-genetics/genetics-timeline/">http://wellcomelibrary.org/using-the-library/subject-guides/genetics/makers-of-modern-genetics/genetics-timeline/</a> ... also made it look like it would be a better fit for telling a story over time than deconflicting events.</p>
       </section>
+
       <footer>
-        <p>Project maintained by <a href="https://github.com/krisgholson">krisgholson</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/krisgholson">krisgholson</a> can be found on <a href="https://github.com/krisgholson/js-timeline-eval">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
       </footer>
+
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
     
   </body>
 </html>
